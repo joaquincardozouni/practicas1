@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.catalogo-lista {
+    display: flex;
+    gap: 10px;
+}
+
+.libro {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.comprobante {
+    border: 2px dashed black;
+    padding: 10px;
+    background-color: #fff8dc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
