@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>BiblioTech</title>
+    <meta charset="UTF-8">
+    <title>BiblioTech - Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <h1>BiblioTech</h1>
+        <p>Sistema para la biblioteca</p>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="pages/solicitar-prestamo.html">Solicitar Préstamo</a> |
+            <a href="pages/mis-prestamos.html">Mis Préstamos</a>
+        </nav>
+    </header>
 
-    <h1>BiblioTech</h1>
-    <p>Sistema de la biblioteca</p>
+    <main>
+        <section class="buscador">
+            <h2>Buscar libro</h2>
+            <form>
+                <input type="text" placeholder="Buscar por título o autor...">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
 
-    <div>
-        <p>Inicio | Solicitar Préstamo | Mis Préstamos</p>
-    </div>
+        <section class="catalogo">
+            <h2>Catálogo de Libros</h2>
+            
+            <div class="tarjeta-libro">
+                <h3>Rayuela</h3>
+                <p><b>Autor:</b> Julio Cortázar</p>
+                <p><b>Estado:</b> Disponible</p>
+                <a href="pages/solicitar-prestamo.html">Pedir este libro</a>
+            </div>
 
-    <hr>
+            <div class="tarjeta-libro">
+                <h3>Ficciones</h3>
+                <p><b>Autor:</b> Jorge Luis Borges</p>
+                <p><b>Estado:</b> Solo Sala de Lectura</p>
+                <a href="pages/solicitar-prestamo.html">Pedir este libro</a>
+            </div>
 
-    <h2>Buscar Libro</h2>
-    <form>
-        <input type="text" placeholder="Ingrese titulo...">
-        <button>Buscar</button>
-    </form>
+            <div class="tarjeta-libro">
+                <h3>Cien Años de Soledad</h3>
+                <p><b>Autor:</b> Gabriel García Márquez</p>
+                <p><b>Estado:</b> No disponible (Agotado)</p>
+            </div>
+        </section>
+    </main>
 
-    <h2>Libros Disponibles</h2>
-
-    <div>
-        <h3>Rayuela</h3>
-        <p>Autor: Julio Cortazar</p>
-        <p>Estado: Disponible</p>
-        <button>Pedir</button>
-    </div>
-
-    <br>
-
-    <div>
-        <h3>Ficciones</h3>
-        <p>Autor: Jorge Luis Borges</p>
-        <p>Estado: Solo en sala</p>
-        <button>Pedir</button>
-    </div>
-
+    <footer>
+        <p>Trabajo Práctico - Prácticas Profesionalizantes I - 2026</p>
+    </footer>
 </body>
 </html>
