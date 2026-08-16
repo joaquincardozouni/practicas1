@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar Préstamo - BiblioTech</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>BiblioTech</h1>
+        <nav>
+            <a href="../index.html">Inicio</a> |
+            <a href="solicitar-prestamo.html">Solicitar Préstamo</a> |
+            <a href="pages/mis-prestamos.html">Mis Préstamos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Formulario de Solicitud</h2>
+            <p>Completá los datos para llevarte un libro[cite: 2]. Recordá que el máximo son 3 préstamos[cite: 2].</p>
+
+            <form action="confirmacion.html" method="GET">
+                <label for="socio">Nombre o Código de Socio:</label><br>
+                <input type="text" id="socio" name="socio" placeholder="Ej: SOC-102" required><br><br>
+
+                <label for="libro">Libro a solicitar:</label><br>
+                <select id="libro" name="libro" required>
+                    <option value="">-- Seleccionar --</option>
+                    <option value="Rayuela">Rayuela</option>
+                    <option value="Ficciones">Ficciones (Solo sala)</option>
+                </select><br><br>
+
+                <label for="modalidad">Modalidad:</label><br>
+                <select id="modalidad" name="modalidad">
+                    <option value="domicilio">A Domicilio</option>
+                    <option value="sala">En Sala de Lectura</option>
+                </select><br><br>
+
+                <button type="submit">Confirmar Préstamo</button>
+                <a href="../index.html">Cancelar</a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabajo Práctico - Prácticas Profesionalizantes I - 2026</p>
+    </footer>
+</body>
+</html>
