@@ -1,0 +1,49 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@bibliotech.com",
+      "password": "123",
+      "nombre": "Bibliotecario Juan",
+      "rol": "admin"
+    },
+    {
+      "id": 2,
+      "email": "katia@gmail.com",
+      "password": "123",
+      "nombre": "Katia",
+      "rol": "lector"
+    }
+  ],
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "Rayuela",
+      "autor": "Julio Cortázar",
+      "estado": "Disponible"
+    },
+    {
+      "id": 2,
+      "titulo": "Ficciones",
+      "autor": "Jorge Luis Borges",
+      "estado": "Solo Sala de Lectura"
+    },
+    {
+      "id": 3,
+      "titulo": "Cien Años de Soledad",
+      "autor": "Gabriel García Márquez",
+      "estado": "Disponible"
+    }
+  ],
+  "prestamos": [
+    {
+      "id": 1,
+      "usuarioId": 2,
+      "socio": "SOC-102",
+      "libroTitulo": "Rayuela",
+      "modalidad": "A Domicilio",
+      "fechaLimite": "23/08/2026",
+      "estado": "Activo"
+    }
+  ]
+}
